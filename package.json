@@ -1,0 +1,60 @@
+{
+  "name": "gl-texture2d-pip",
+  "version": "1.0.0",
+  "description": "Preview the contents of a set of gl-texture instances alongside your main render pass.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "https://github.com/hughsk"
+  },
+  "scripts": {
+    "start": "budo demo/index.js:bundle.js",
+    "bundle": "browserify demo/index.js -o bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "dependencies": {
+    "a-big-triangle": "^1.0.2",
+    "gl-shader": "^4.0.5",
+    "glslify": "^2.3.1",
+    "weak-map": "^1.0.5"
+  },
+  "devDependencies": {
+    "bunny": "^1.0.1",
+    "canvas-fit": "^1.5.0",
+    "canvas-orbit-camera": "^1.0.2",
+    "eye-vector": "0.0.0",
+    "gl-context": "^0.1.1",
+    "gl-fbo": "^2.0.5",
+    "gl-geometry": "^1.1.1",
+    "gl-mat4": "^1.1.4",
+    "glsl-fog": "0.0.1",
+    "normals": "^1.0.1",
+    "snowden": "^1.0.1",
+    "budo": "^4.2.1"
+  },
+  "keywords": [
+    "render,",
+    "pass,",
+    "deferred,",
+    "preview,",
+    "ecosystem:stackgl,",
+    "gl,",
+    "webgl,",
+    "texture2d,",
+    "pip"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/gl-texture2d-pip.git"
+  },
+  "homepage": "https://github.com/stackgl/gl-texture2d-pip",
+  "bugs": {
+    "url": "https://github.com/stackgl/gl-texture2d-pip/issues"
+  }
+}
